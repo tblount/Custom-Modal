@@ -1,6 +1,6 @@
 // src/components/Modal.js
 import React, { useState } from 'react';
-import './styles.css';
+import '../styles.css';
 
 const Modal = ({ isOpen, onClose }) => {
   const [inputText, setInputText] = useState('');
