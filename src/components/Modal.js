@@ -25,19 +25,17 @@ const Modal = ({ isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay">
-      <div className="modal-content">
-        <h2>Search Old Chats</h2>
-        <input
-          type="text"
-          value={inputText}
-          onChange={handleInputChange}
-          placeholder="Enter your search query"
-        />
-        <button onClick={handleSearch}>Search</button>
-        <button onClick={onClose}>Close</button>
-      </div>
+    <div className="modal-content">
+      <button className="close-button" onClick={onClose}>X</button>
+      <h2>Search for Past Chats</h2>
+      <input
+        type="text"
+        placeholder="Enter keywords..."
+        onChange={(e) => onSearch(e.target.value)}
+      />
     </div>
-  );
+  </div>
+);
 };
 
 export default Modal;
