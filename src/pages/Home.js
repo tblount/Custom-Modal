@@ -7,8 +7,9 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home Page</h1>
-      <button onClick={() => setModalOpen(true)}>Open Modal</button>
+      <h1> 
+        <button onClick={() => setModalOpen(true)}>Open Modal</button>
+      </h1>
       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
     </div>
   );
